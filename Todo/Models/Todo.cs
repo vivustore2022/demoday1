@@ -1,7 +1,9 @@
 namespace Todo.Models;
 
-public class Todo : BaseEntity
+public class TodoModel : BaseEntity
 {
-    public string? Title { get; set; }
+    private string? title;
+
+    public string? Title { get => title; set => title = value; }
     public bool IsCompleted { get; set; }
 }
