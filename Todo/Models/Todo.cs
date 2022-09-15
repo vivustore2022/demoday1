@@ -1,8 +1,7 @@
-namespace Todo;
+namespace Todo.Models;
 
-public class Todo
+public class Todo : BaseEntity
 {
-    public int Id { get; set; }
     public string? Title { get; set; }
     public bool IsCompleted { get; set; }
 }
